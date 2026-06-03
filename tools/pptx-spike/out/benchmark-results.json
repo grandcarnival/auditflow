@@ -1,0 +1,270 @@
+{
+  "environment": {
+    "python": "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "node": "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+    "node_modules": "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules"
+  },
+  "timings_ms": {
+    "fixture_generation": 31.2,
+    "python_pptx_roundtrip": 12.49,
+    "pptxgenjs_regeneration": 117.18,
+    "hybrid_openxml_clone_edit": 4.43
+  },
+  "source": {
+    "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+    "sha256": "5e4e22dcfbbe63ee632ec40f11747b25f8b3041271378beea197cd01668801ab",
+    "size_bytes": 40082,
+    "slide_count": 3,
+    "slide_master_count": 1,
+    "slide_layout_count": 11,
+    "theme_count": 1,
+    "notes_count": 3,
+    "chart_count": 1,
+    "table_count": 1,
+    "image_count": 0,
+    "editable_text_run_count": 23,
+    "placeholder_count": 5,
+    "package_part_count": 51,
+    "slide_text": [
+      "FY2025 Audit Committee Prior-year template | Confidential",
+      "Executive Summary Audit scope completed across core financial controls. Three high-priority findings remain open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 3 2 Medium 7 5 Low 4 8",
+      "Finding Detail | Access Governance Condition: Quarterly access reviews were not consistently evidenced. Risk: Unauthorized access may persist beyond acceptable timeframes. Recommendation: Standardize evidence capture and escalation."
+    ],
+    "slide_part_hashes": {
+      "ppt/slides/slide1.xml": "196a1ab09ec1e6f70f1a0847d1033a01ce1a0c2133587d3f163262b188fa2987",
+      "ppt/slides/slide2.xml": "afedeeb7ec6408c38fb0bd3c6fe436c8f4e546e8ef0d4e6393f2f8ce10e307b7",
+      "ppt/slides/slide3.xml": "627f5cd5576bb3deb1db0b521ea48aa109ccf9077a4217ea2111257c8b91f541"
+    },
+    "has_vba": false
+  },
+  "python_pptx": {
+    "metrics": {
+      "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\python_pptx_roundtrip.pptx",
+      "sha256": "a4f363e6961a06e0fbc4d9ce9314c13c8ef82d387f4e22a73201ddb8ea91a024",
+      "size_bytes": 39978,
+      "slide_count": 3,
+      "slide_master_count": 1,
+      "slide_layout_count": 11,
+      "theme_count": 1,
+      "notes_count": 3,
+      "chart_count": 1,
+      "table_count": 1,
+      "image_count": 0,
+      "editable_text_run_count": 23,
+      "placeholder_count": 5,
+      "package_part_count": 51,
+      "slide_text": [
+        "FY2026 Audit Committee Prior-year template | Confidential",
+        "Executive Summary Audit scope completed across core financial controls. Two high-priority findings remain open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 3 2 Medium 7 5 Low 4 8",
+        "Finding Detail | Access Governance Condition: Quarterly access reviews were not consistently evidenced. Risk: Unauthorized access may persist beyond acceptable timeframes. Recommendation: Standardize evidence capture and escalation."
+      ],
+      "slide_part_hashes": {
+        "ppt/slides/slide1.xml": "9992ea218d8bccdf09447728f2cdf564a5087e9848516f38b64978a10d37ddc3",
+        "ppt/slides/slide2.xml": "bb5dfeaf77ff8f6f54213bd2aa553b74aef8a3f60a120c2cb2e2a851c8d9078d",
+        "ppt/slides/slide3.xml": "627f5cd5576bb3deb1db0b521ea48aa109ccf9077a4217ea2111257c8b91f541"
+      },
+      "has_vba": false
+    },
+    "extraction": {
+      "slide_count": 3,
+      "layouts_visible": 11,
+      "masters_visible": 1,
+      "slides": [
+        {
+          "index": 1,
+          "layout_name": "Title Slide",
+          "shape_count": 3,
+          "shapes": [
+            {
+              "name": "Title 1",
+              "shape_type": "PLACEHOLDER (14)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "FY2025 Audit Committee"
+            },
+            {
+              "name": "Subtitle 2",
+              "shape_type": "PLACEHOLDER (14)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "Prior-year template | Confidential"
+            },
+            {
+              "name": "Rectangle 3",
+              "shape_type": "AUTO_SHAPE (1)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "layout_name": "Title Only",
+          "shape_count": 4,
+          "shapes": [
+            {
+              "name": "Title 1",
+              "shape_type": "PLACEHOLDER (14)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "Executive Summary"
+            },
+            {
+              "name": "TextBox 2",
+              "shape_type": "TEXT_BOX (17)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "Audit scope completed across core financial controls.\nThree high-priority findings remain open.\nManagement remediation cadence improved quarter over quarter.\nCommittee attention requested for access governance."
+            },
+            {
+              "name": "Table 3",
+              "shape_type": "TABLE (19)",
+              "has_text": false,
+              "has_table": true,
+              "has_chart": false
+            },
+            {
+              "name": "Chart 4",
+              "shape_type": "CHART (3)",
+              "has_text": false,
+              "has_table": false,
+              "has_chart": true
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "layout_name": "Title and Content",
+          "shape_count": 2,
+          "shapes": [
+            {
+              "name": "Title 1",
+              "shape_type": "PLACEHOLDER (14)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "Finding Detail | Access Governance"
+            },
+            {
+              "name": "Content Placeholder 2",
+              "shape_type": "PLACEHOLDER (14)",
+              "has_text": true,
+              "has_table": false,
+              "has_chart": false,
+              "text": "Condition: Quarterly access reviews were not consistently evidenced.\nRisk: Unauthorized access may persist beyond acceptable timeframes.\nRecommendation: Standardize evidence capture and escalation."
+            }
+          ]
+        }
+      ]
+    },
+    "preservation_score": {
+      "checks": {
+        "slide_count": true,
+        "masters_at_least_source": true,
+        "layouts_at_least_source": true,
+        "themes_at_least_source": true,
+        "notes_at_least_source": true,
+        "charts_at_least_source": true,
+        "tables_at_least_source": true,
+        "editable_text_present": true
+      },
+      "passed": 8,
+      "total": 8,
+      "score": 1.0
+    }
+  },
+  "pptxgenjs": {
+    "metrics": {
+      "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\pptxgenjs_regenerated.pptx",
+      "sha256": "ca192c7d97aa79be6a7fec6aa336203493ed66ea7e07032b53033726b51d7fa5",
+      "size_bytes": 100438,
+      "slide_count": 3,
+      "slide_master_count": 1,
+      "slide_layout_count": 1,
+      "theme_count": 1,
+      "notes_count": 3,
+      "chart_count": 1,
+      "table_count": 1,
+      "image_count": 1,
+      "editable_text_run_count": 23,
+      "placeholder_count": 0,
+      "package_part_count": 50,
+      "slide_text": [
+        "FY2026 Audit Committee Regenerated current-year deck | Confidential",
+        "Executive Summary Audit scope completed across core financial controls. Two high-priority findings remain open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 2 3 Medium 6 6 Low 3 9",
+        "Finding Detail | Access Governance Condition: Quarterly access reviews lacked consistent evidence. Risk: Unauthorized access may persist beyond acceptable timeframes. Recommendation: Standardize evidence capture and escalation."
+      ],
+      "slide_part_hashes": {
+        "ppt/slides/slide1.xml": "9666040369000e50186d2d70886deecc61042e1a42ab846acf6abfe6b3c17584",
+        "ppt/slides/slide2.xml": "ec709cbe40af93c4ef591b8f10efac64953acbe3c11c04a6505c879382a915fb",
+        "ppt/slides/slide3.xml": "22daf37aa14336a0df4c8d384754f2704ba63d1da2fc4cd4ada3b0424917a2d3"
+      },
+      "has_vba": false
+    },
+    "preservation_score": {
+      "checks": {
+        "slide_count": true,
+        "masters_at_least_source": true,
+        "layouts_at_least_source": false,
+        "themes_at_least_source": true,
+        "notes_at_least_source": true,
+        "charts_at_least_source": true,
+        "tables_at_least_source": true,
+        "editable_text_present": true
+      },
+      "passed": 7,
+      "total": 8,
+      "score": 0.875
+    }
+  },
+  "hybrid_openxml": {
+    "metrics": {
+      "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\hybrid_openxml_clone_edit.pptx",
+      "sha256": "19c905eb8ca9b04da86d12f6a1cd446a630ff87803ef6b2f72e2b16363038147",
+      "size_bytes": 40082,
+      "slide_count": 3,
+      "slide_master_count": 1,
+      "slide_layout_count": 11,
+      "theme_count": 1,
+      "notes_count": 3,
+      "chart_count": 1,
+      "table_count": 1,
+      "image_count": 0,
+      "editable_text_run_count": 23,
+      "placeholder_count": 5,
+      "package_part_count": 51,
+      "slide_text": [
+        "FY2026 Audit Committee Prior-year template | Confidential",
+        "Executive Summary Audit scope completed across core financial controls. Two high-priority findings remain open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 3 2 Medium 7 5 Low 4 8",
+        "Finding Detail | Access Governance Condition: Quarterly access reviews were not consistently evidenced. Risk: Unauthorized access may persist beyond acceptable timeframes. Recommendation: Standardize evidence capture and escalation."
+      ],
+      "slide_part_hashes": {
+        "ppt/slides/slide1.xml": "9992ea218d8bccdf09447728f2cdf564a5087e9848516f38b64978a10d37ddc3",
+        "ppt/slides/slide2.xml": "0302307b8c60077ba54893827bec6685c2fe15519cde2415870b462f23d904ca",
+        "ppt/slides/slide3.xml": "627f5cd5576bb3deb1db0b521ea48aa109ccf9077a4217ea2111257c8b91f541"
+      },
+      "has_vba": false
+    },
+    "preservation_score": {
+      "checks": {
+        "slide_count": true,
+        "masters_at_least_source": true,
+        "layouts_at_least_source": true,
+        "themes_at_least_source": true,
+        "notes_at_least_source": true,
+        "charts_at_least_source": true,
+        "tables_at_least_source": true,
+        "editable_text_present": true
+      },
+      "passed": 8,
+      "total": 8,
+      "score": 1.0
+    }
+  }
+}

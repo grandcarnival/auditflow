@@ -1,0 +1,20 @@
+{
+  "fixture_count": 1,
+  "passed": 1,
+  "failed": 0,
+  "results": [
+    {
+      "id": "synthetic-audit-committee",
+      "name": "Synthetic audit committee recurring deck",
+      "deck_type": "audit_committee",
+      "passed": true,
+      "export": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\export.pptx",
+      "report": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\report.json",
+      "manifest": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\manifest.json",
+      "preservation_score": 1.0,
+      "package_valid": true,
+      "source_failures": [],
+      "output_failures": []
+    }
+  ]
+}

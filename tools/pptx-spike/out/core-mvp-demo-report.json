@@ -1,0 +1,462 @@
+{
+  "source_deck": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+  "findings_workbook": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\current_year_findings.xlsx",
+  "export": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\auditflow_core_mvp_export.pptx",
+  "template": {
+    "slide_count": 3,
+    "slide_width_emu": 12191695,
+    "slide_height_emu": 6858000,
+    "slides": [
+      {
+        "index": 1,
+        "part_name": "ppt/slides/slide1.xml",
+        "text": "FY2025 Audit Committee Prior-year template | Confidential",
+        "text_runs": [
+          {
+            "text": "FY2025 Audit Committee",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Prior-year template | Confidential",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          }
+        ],
+        "placeholder_count": 2,
+        "table_count": 0,
+        "chart_count": 0,
+        "shape_count": 3,
+        "note_text": "Speaker note: Preserve committee-facing cover language.",
+        "role_hint": "cover",
+        "layout_fingerprint": "a66daa2dd001cfe1454edf90518ce2d12a90eac624774f1116a7860ca9d77750",
+        "semantic_placeholders": [
+          "ctrTitle",
+          "subTitle"
+        ],
+        "recurring_markers": [],
+        "is_title_content": false
+      },
+      {
+        "index": 2,
+        "part_name": "ppt/slides/slide2.xml",
+        "text": "Executive Summary Audit scope completed across core financial controls. Three high-priority findings remain open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 3 2 Medium 7 5 Low 4 8",
+        "text_runs": [
+          {
+            "text": "Executive Summary",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Audit scope completed across core financial controls.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Three high-priority findings remain open.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Management remediation cadence improved quarter over quarter.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Committee attention requested for access governance.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Risk",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Open",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Closed",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "High",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "3",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "2",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Medium",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "7",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "5",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Low",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "4",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "8",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          }
+        ],
+        "placeholder_count": 1,
+        "table_count": 1,
+        "chart_count": 1,
+        "shape_count": 4,
+        "note_text": "Speaker note: Discuss remediation trend and high-risk open findings.",
+        "role_hint": "executive_summary",
+        "layout_fingerprint": "4230251ee6604de1bb5219d6d8e2b8caca91eb317ac4b7e8d0ea8e2770918d2c",
+        "semantic_placeholders": [
+          "chart",
+          "finding",
+          "summary",
+          "table",
+          "title"
+        ],
+        "recurring_markers": [
+          "executive summary",
+          "risk"
+        ],
+        "is_title_content": true
+      },
+      {
+        "index": 3,
+        "part_name": "ppt/slides/slide3.xml",
+        "text": "Finding Detail | Access Governance Condition: Quarterly access reviews were not consistently evidenced. Risk: Unauthorized access may persist beyond acceptable timeframes. Recommendation: Standardize evidence capture and escalation.",
+        "text_runs": [
+          {
+            "text": "Finding Detail | Access Governance",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Condition: Quarterly access reviews were not consistently evidenced.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Risk: Unauthorized access may persist beyond acceptable timeframes.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          },
+          {
+            "text": "Recommendation: Standardize evidence capture and escalation.",
+            "bold": false,
+            "italic": false,
+            "font_size": null
+          }
+        ],
+        "placeholder_count": 2,
+        "table_count": 0,
+        "chart_count": 0,
+        "shape_count": 2,
+        "note_text": "Speaker note: Confirm management owner and due date.",
+        "role_hint": "finding_detail",
+        "layout_fingerprint": "3783fb44018e17c796be314e09b835e435d1a048c8d0d2d70abe260ded8b519a",
+        "semantic_placeholders": [
+          "finding",
+          "title"
+        ],
+        "recurring_markers": [
+          "finding detail",
+          "risk",
+          "recommendation",
+          "condition"
+        ],
+        "is_title_content": true
+      }
+    ]
+  },
+  "findings": [
+    {
+      "row_number": 2,
+      "title": "Privileged Access Review",
+      "risk_rating": "High",
+      "condition": "Privileged access reviews lacked complete approval evidence.",
+      "recommendation": "Require quarterly evidence capture and exception escalation.",
+      "owner": "IT",
+      "due_date": "2026-09-30",
+      "status": "Open",
+      "source_sheet": "Findings"
+    },
+    {
+      "row_number": 3,
+      "title": "Vendor Access Monitoring",
+      "risk_rating": "Medium",
+      "condition": "Vendor access review evidence was inconsistently retained.",
+      "recommendation": "Centralize vendor access review evidence and owner attestations.",
+      "owner": "Procurement",
+      "due_date": "2026-10-31",
+      "status": "Open",
+      "source_sheet": "Findings"
+    },
+    {
+      "row_number": 4,
+      "title": "Legacy User Cleanup",
+      "risk_rating": "Low",
+      "condition": "Terminated users were removed after the target SLA in two cases.",
+      "recommendation": "Automate stale-account reporting.",
+      "owner": "IT",
+      "due_date": "2026-08-15",
+      "status": "Closed",
+      "source_sheet": "Findings"
+    }
+  ],
+  "content_map": {
+    "replacements": [
+      {
+        "source_text": "FY2025 Audit Committee",
+        "target_text": "FY2026 Audit Committee",
+        "reason": "Update cover year from prior-year template.",
+        "confidence": 1.0,
+        "source_fields": [
+          "fiscal_year"
+        ]
+      },
+      {
+        "source_text": "Three high-priority findings remain open.",
+        "target_text": "One high-priority finding remains open.",
+        "reason": "Update executive summary high-priority finding count from findings workbook.",
+        "confidence": 0.95,
+        "source_fields": [
+          "findings.risk_rating"
+        ]
+      },
+      {
+        "source_text": "Finding Detail | Access Governance",
+        "target_text": "Finding Detail | Privileged Access Review",
+        "reason": "Map first MVP finding into the prior-year finding detail slide.",
+        "confidence": 1.0,
+        "source_fields": [
+          "findings[0].title"
+        ]
+      },
+      {
+        "source_text": "Condition: Quarterly access reviews were not consistently evidenced.\nRisk: Unauthorized access may persist beyond acceptable timeframes.\nRecommendation: Standardize evidence capture and escalation.",
+        "target_text": "Condition: Privileged access reviews lacked complete approval evidence.\nRisk: High\nRecommendation: Require quarterly evidence capture and exception escalation.",
+        "reason": "Replace prior-year finding body with current-year finding fields.",
+        "confidence": 1.0,
+        "source_fields": [
+          "findings[0].condition",
+          "findings[0].risk_rating",
+          "findings[0].recommendation"
+        ]
+      }
+    ],
+    "warnings": [],
+    "confidence": 0.95,
+    "blocked": false
+  },
+  "table_update": {
+    "slide_index": 2,
+    "table_index": 0,
+    "original_rows": 4,
+    "updated_rows": 4,
+    "column_count": 3,
+    "style_preserved": true,
+    "merged_cells_preserved": true
+  },
+  "chart_update": {
+    "chart_index": 1,
+    "categories": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "series": [
+      {
+        "name": "Open",
+        "values": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Closed",
+        "values": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "embedded_workbook_updated": true,
+    "series_count_preserved": true,
+    "relationship_preserved": true
+  },
+  "slide_duplication": {
+    "source_slide_index": 3,
+    "new_slide_index": 4,
+    "new_slide_id": 259,
+    "new_slide_part": "ppt/slides/slide4.xml",
+    "copied_parts": [
+      "ppt/notesSlides/_rels/notesSlide4.xml.rels",
+      "ppt/notesSlides/notesSlide4.xml",
+      "ppt/slides/_rels/slide4.xml.rels",
+      "ppt/slides/slide4.xml"
+    ],
+    "notes_preserved": true,
+    "chart_parts_copied": 0,
+    "embedded_parts_copied": 0
+  },
+  "validation": {
+    "checks": {
+      "slide_count": true,
+      "masters_preserved": true,
+      "layouts_preserved": true,
+      "themes_preserved": true,
+      "notes_preserved": true,
+      "charts_preserved": true,
+      "tables_preserved": true,
+      "editable_text_present": true
+    },
+    "passed": 8,
+    "total": 8,
+    "score": 1.0,
+    "source": {
+      "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+      "sha256": "52680bdf495ed5f3376416bfedddb33b70f93a803d79c6312690a2bfd5ca4b30",
+      "size_bytes": 40082,
+      "slide_count": 3,
+      "slide_master_count": 1,
+      "slide_layout_count": 11,
+      "theme_count": 1,
+      "notes_count": 3,
+      "chart_count": 1,
+      "table_count": 1,
+      "image_count": 0,
+      "editable_text_run_count": 23,
+      "placeholder_count": 5,
+      "package_part_count": 51
+    },
+    "target": {
+      "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\out\\auditflow_core_mvp_export.pptx",
+      "sha256": "a809e035e3473e633c8b425d7e88fbd73057e0c1b74db18453ada9974e20c420",
+      "size_bytes": 41525,
+      "slide_count": 4,
+      "slide_master_count": 1,
+      "slide_layout_count": 11,
+      "theme_count": 1,
+      "notes_count": 4,
+      "chart_count": 1,
+      "table_count": 1,
+      "image_count": 0,
+      "editable_text_run_count": 27,
+      "placeholder_count": 7,
+      "package_part_count": 55
+    }
+  },
+  "package_validation": {
+    "valid": true,
+    "issues": [],
+    "relationship_count": 51,
+    "editable_text_run_count": 27,
+    "chart_count": 1,
+    "table_count": 1
+  },
+  "export_table": [
+    [
+      "Risk",
+      "Open",
+      "Closed"
+    ],
+    [
+      "High",
+      "1",
+      "0"
+    ],
+    [
+      "Medium",
+      "1",
+      "0"
+    ],
+    [
+      "Low",
+      "0",
+      "1"
+    ]
+  ],
+  "export_chart": {
+    "categories": [
+      "High",
+      "Medium",
+      "Low"
+    ],
+    "series": [
+      {
+        "name": "Open",
+        "values": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Closed",
+        "values": [
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "export_slide_text": [
+    "FY2026 Audit Committee Prior-year template | Confidential",
+    "Executive Summary Audit scope completed across core financial controls. One high-priority finding remains open. Management remediation cadence improved quarter over quarter. Committee attention requested for access governance. Risk Open Closed High 1 0 Medium 1 0 Low 0 1",
+    "Finding Detail | Privileged Access Review Condition: Privileged access reviews lacked complete approval evidence. Risk: High Recommendation: Require quarterly evidence capture and exception escalation.",
+    "Finding Detail | Vendor Access Monitoring Condition: Vendor access review evidence was inconsistently retained. Risk: Medium Recommendation: Centralize vendor access review evidence and owner attestations."
+  ]
+}

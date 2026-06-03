@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "name": "unit_tests",
+      "command": [
+        "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "pytest",
+        "packages/pptx/tests",
+        "packages/documents/tests",
+        "packages/ai/tests",
+        "packages/workflow/tests"
+      ],
+      "returncode": 0,
+      "stdout_tail": "============================= test session starts =============================\nplatform win32 -- Python 3.12.13, pytest-9.0.3, pluggy-1.6.0\nrootdir: C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\ncollected 23 items\n\npackages\\pptx\\tests\\test_chart_edge_cases.py .....                       [ 21%]\npackages\\pptx\\tests\\test_chart_preservation.py ..                        [ 30%]\npackages\\pptx\\tests\\test_failure_analysis.py ...                         [ 43%]\npackages\\pptx\\tests\\test_openxml_preservation.py .                       [ 47%]\npackages\\pptx\\tests\\test_slide_duplication.py ...                        [ 60%]\npackages\\pptx\\tests\\test_table_preservation.py ...                       [ 73%]\npackages\\pptx\\tests\\test_template_analysis.py .                          [ 78%]\npackages\\pptx\\tests\\test_validation.py ..                                [ 86%]\npackages\\documents\\tests\\test_excel_findings.py .                        [ 91%]\npackages\\ai\\tests\\test_content_mapping.py .                              [ 95%]\npackages\\workflow\\tests\\test_mvp_workflow.py .                           [100%]\n\n============================= 23 passed in 1.31s ==============================\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "preservation_benchmark",
+      "command": [
+        "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "tools/preservation-benchmark/run_benchmark_suite.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"suite_score\": 1.0,\n  \"case_count\": 4,\n  \"results\": \"C:\\\\Users\\\\alexh\\\\Documents\\\\Codex\\\\2026-05-28\\\\you-are-my-autonomous-cto-and\\\\tools\\\\preservation-benchmark\\\\out\\\\preservation-benchmark-results.json\",\n  \"summary\": \"C:\\\\Users\\\\alexh\\\\Documents\\\\Codex\\\\2026-05-28\\\\you-are-my-autonomous-cto-and\\\\tools\\\\preservation-benchmark\\\\out\\\\preservation-benchmark-summary.md\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "enterprise_fixtures",
+      "command": [
+        "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "tools/enterprise-fixtures/run_fixture_suite.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"fixture_count\": 1,\n  \"passed\": 1,\n  \"failed\": 0,\n  \"results\": \"C:\\\\Users\\\\alexh\\\\Documents\\\\Codex\\\\2026-05-28\\\\you-are-my-autonomous-cto-and\\\\tools\\\\enterprise-fixtures\\\\out\\\\enterprise-fixture-results.json\",\n  \"summary\": \"C:\\\\Users\\\\alexh\\\\Documents\\\\Codex\\\\2026-05-28\\\\you-are-my-autonomous-cto-and\\\\tools\\\\enterprise-fixtures\\\\out\\\\enterprise-fixture-summary.md\"\n}\n",
+      "stderr_tail": ""
+    }
+  ]
+}

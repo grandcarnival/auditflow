@@ -1,0 +1,287 @@
+{
+  "suite_score": 1.0,
+  "case_count": 4,
+  "source": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+  "results": [
+    {
+      "name": "text_replacement",
+      "output": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_text_replacement.pptx",
+      "score": 1.0,
+      "dimensions": {
+        "layout_preservation": 1.0,
+        "notes_preservation": 1.0,
+        "chart_preservation": 1.0,
+        "table_preservation": 1.0,
+        "theme_preservation": 1.0,
+        "editability": 1.0,
+        "corruption_rate": 1.0,
+        "export_integrity": 1.0
+      },
+      "preservation": {
+        "checks": {
+          "slide_count": true,
+          "masters_preserved": true,
+          "layouts_preserved": true,
+          "themes_preserved": true,
+          "notes_preserved": true,
+          "charts_preserved": true,
+          "tables_preserved": true,
+          "editable_text_present": true
+        },
+        "passed": 8,
+        "total": 8,
+        "score": 1.0,
+        "source": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+          "sha256": "dd3b26a51fdc157086fa3f6c6f7c3919b5f0aaf013aebac3354efc85b2510e4e",
+          "size_bytes": 40080,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        },
+        "target": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_text_replacement.pptx",
+          "sha256": "c1f1dd634cdfb9bab268816d865f1430803c17164ccafb3067e5dab5ebafd285",
+          "size_bytes": 40079,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        }
+      },
+      "package_validation": {
+        "valid": true,
+        "issues": [],
+        "relationship_count": 47,
+        "editable_text_run_count": 23,
+        "chart_count": 1,
+        "table_count": 1
+      }
+    },
+    {
+      "name": "table_update",
+      "output": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_table_update.pptx",
+      "score": 1.0,
+      "dimensions": {
+        "layout_preservation": 1.0,
+        "notes_preservation": 1.0,
+        "chart_preservation": 1.0,
+        "table_preservation": 1.0,
+        "theme_preservation": 1.0,
+        "editability": 1.0,
+        "corruption_rate": 1.0,
+        "export_integrity": 1.0
+      },
+      "preservation": {
+        "checks": {
+          "slide_count": true,
+          "masters_preserved": true,
+          "layouts_preserved": true,
+          "themes_preserved": true,
+          "notes_preserved": true,
+          "charts_preserved": true,
+          "tables_preserved": true,
+          "editable_text_present": true
+        },
+        "passed": 8,
+        "total": 8,
+        "score": 1.0,
+        "source": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+          "sha256": "dd3b26a51fdc157086fa3f6c6f7c3919b5f0aaf013aebac3354efc85b2510e4e",
+          "size_bytes": 40080,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        },
+        "target": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_table_update.pptx",
+          "sha256": "bc5dac564ec8aad82fad11704d10b4cdafb6f7c79f7a09f3b710708511d132c8",
+          "size_bytes": 40076,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        }
+      },
+      "package_validation": {
+        "valid": true,
+        "issues": [],
+        "relationship_count": 47,
+        "editable_text_run_count": 23,
+        "chart_count": 1,
+        "table_count": 1
+      }
+    },
+    {
+      "name": "chart_update",
+      "output": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_chart_update.pptx",
+      "score": 1.0,
+      "dimensions": {
+        "layout_preservation": 1.0,
+        "notes_preservation": 1.0,
+        "chart_preservation": 1.0,
+        "table_preservation": 1.0,
+        "theme_preservation": 1.0,
+        "editability": 1.0,
+        "corruption_rate": 1.0,
+        "export_integrity": 1.0
+      },
+      "preservation": {
+        "checks": {
+          "slide_count": true,
+          "masters_preserved": true,
+          "layouts_preserved": true,
+          "themes_preserved": true,
+          "notes_preserved": true,
+          "charts_preserved": true,
+          "tables_preserved": true,
+          "editable_text_present": true
+        },
+        "passed": 8,
+        "total": 8,
+        "score": 1.0,
+        "source": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+          "sha256": "dd3b26a51fdc157086fa3f6c6f7c3919b5f0aaf013aebac3354efc85b2510e4e",
+          "size_bytes": 40080,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        },
+        "target": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_chart_update.pptx",
+          "sha256": "c8759617cfca3530f50b53378138438e813ba230a200cd169d97137fea2a6499",
+          "size_bytes": 39624,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        }
+      },
+      "package_validation": {
+        "valid": true,
+        "issues": [],
+        "relationship_count": 47,
+        "editable_text_run_count": 23,
+        "chart_count": 1,
+        "table_count": 1
+      }
+    },
+    {
+      "name": "slide_duplication",
+      "output": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_slide_duplication.pptx",
+      "score": 1.0,
+      "dimensions": {
+        "layout_preservation": 1.0,
+        "notes_preservation": 1.0,
+        "chart_preservation": 1.0,
+        "table_preservation": 1.0,
+        "theme_preservation": 1.0,
+        "editability": 1.0,
+        "corruption_rate": 1.0,
+        "export_integrity": 1.0
+      },
+      "preservation": {
+        "checks": {
+          "slide_count": true,
+          "masters_preserved": true,
+          "layouts_preserved": true,
+          "themes_preserved": true,
+          "notes_preserved": true,
+          "charts_preserved": true,
+          "tables_preserved": true,
+          "editable_text_present": true
+        },
+        "passed": 8,
+        "total": 8,
+        "score": 1.0,
+        "source": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\pptx-spike\\fixtures\\prior_year_audit_committee.pptx",
+          "sha256": "dd3b26a51fdc157086fa3f6c6f7c3919b5f0aaf013aebac3354efc85b2510e4e",
+          "size_bytes": 40080,
+          "slide_count": 3,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 3,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 23,
+          "placeholder_count": 5,
+          "package_part_count": 51
+        },
+        "target": {
+          "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\preservation-benchmark\\out\\case_slide_duplication.pptx",
+          "sha256": "cb2fc885075fb30fb8ea6910d9754e34b9b8603284c73141822a57fb9f56a226",
+          "size_bytes": 41563,
+          "slide_count": 4,
+          "slide_master_count": 1,
+          "slide_layout_count": 11,
+          "theme_count": 1,
+          "notes_count": 4,
+          "chart_count": 1,
+          "table_count": 1,
+          "image_count": 0,
+          "editable_text_run_count": 27,
+          "placeholder_count": 7,
+          "package_part_count": 55
+        }
+      },
+      "package_validation": {
+        "valid": true,
+        "issues": [],
+        "relationship_count": 51,
+        "editable_text_run_count": 27,
+        "chart_count": 1,
+        "table_count": 1
+      }
+    }
+  ]
+}

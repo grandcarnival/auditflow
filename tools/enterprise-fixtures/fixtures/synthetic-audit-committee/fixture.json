@@ -1,0 +1,11 @@
+{
+  "id": "synthetic-audit-committee",
+  "name": "Synthetic audit committee recurring deck",
+  "deck_type": "audit_committee",
+  "prior_deck": "prior.pptx",
+  "findings_workbook": "findings.xlsx",
+  "fiscal_year": 2026,
+  "minimum_preservation_score": 1.0,
+  "expected_package_valid": true
+}
+

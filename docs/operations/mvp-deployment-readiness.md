@@ -2,22 +2,23 @@
 
 ## Current Readiness
 
-The Next.js app builds locally, but the processing architecture is not yet ready for a simple Vercel production deployment. The current API route shells out to Python to run the PPTX workflow. That is acceptable for local MVP validation, but production needs a deliberate processing path.
+The Next.js app builds locally and can be deployed as a public Vercel preview. The preview can now support pilot processing when connected to Supabase Storage/Postgres and a running Python worker.
 
 ## Deployment Decision
 
 Recommended pilot deployment path:
 
 1. Keep the Next.js app on Vercel.
-2. Move PPTX processing into a dedicated Python worker or Vercel Python Function spike.
-3. Store uploaded and generated files in durable object storage.
-4. Return job status and download URLs from the web app.
+2. Use Supabase Postgres for job state.
+3. Use Supabase Storage for uploaded files and generated artifacts.
+4. Run the Python preservation engine in a small background worker.
+5. Return job status and download URLs from the web app.
 
 Reasoning:
 
-- Vercel supports Python Functions, but the runtime is still marked Beta in the official docs.
-- Vercel Functions have package size and execution limits that may become tight for large PowerPoint files.
-- The current local workflow writes to `.runtime`, which is not durable production storage.
+- Vercel supports Python Functions and currently lists Python 3.12, 3.13, and 3.14, but PPTX processing is better handled by an always-on worker during pilot.
+- Supabase Storage provides private file buckets and access controls.
+- Supabase Postgres gives a simple durable job lifecycle without adding a separate queue service.
 
 Reference points:
 
@@ -31,13 +32,15 @@ Reference points:
 
 Required for a pilot deployment:
 
+- `NEXT_PUBLIC_APP_ENV`: set to `preview` for public preview.
+- `AUDITFLOW_PROCESSOR_MODE`: set to `supabase` for pilot preview; set to `local` only for local development.
+- `SUPABASE_URL`: Supabase project URL.
+- `SUPABASE_SERVICE_ROLE_KEY`: server-side only service role key.
+- `AUDITFLOW_STORAGE_BUCKET`: defaults to `auditflow-artifacts`.
 - `OPENAI_API_KEY`: server-side only.
 - `AUDITFLOW_PYTHON`: optional local override for the Python executable.
-- `AUDITFLOW_STORAGE_BUCKET`: required once object storage is wired.
-- `AUDITFLOW_STORAGE_ACCESS_KEY`: required once object storage is wired.
-- `AUDITFLOW_STORAGE_SECRET_KEY`: required once object storage is wired.
+- `AUDITFLOW_REPO_ROOT`: optional local override for the repository root.
 - `SENTRY_DSN`: optional for pilot, recommended before external testing.
-- `NEXT_PUBLIC_APP_ENV`: optional environment label.
 
 Vercel environment variables are scoped by environment and apply only to new deployments after changes. Secrets must not be exposed to client-side code.
 
@@ -68,17 +71,19 @@ The current MVP workflow is deterministic and does not require OpenAI to generat
 
 - Configure Vercel project root as `apps/web`.
 - Keep `npm run build` passing from `apps/web`.
-- Add environment variables for preview and production.
-- Confirm whether processing will run as a Python Function, external worker, or separate service.
-- Replace `.runtime` file persistence for deployed processing.
+- Add `NEXT_PUBLIC_APP_ENV=preview`.
+- Add `AUDITFLOW_PROCESSOR_MODE=supabase`.
+- Add `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, and `AUDITFLOW_STORAGE_BUCKET`.
+- Apply the Supabase processing migration.
+- Deploy and run the Python worker.
 - Add upload size limits and file-type validation before external users.
 - Add Sentry before pilot users process real decks.
 - Run a full upload/download smoke test against a preview deployment.
 
 ## Current Blockers
 
-- Production processing path is not finalized.
-- Durable storage is not wired.
+- Supabase project must be created and migrated.
+- Python worker must be deployed.
 - ESLint is not configured.
 - `npm audit` still needs a clean local or CI run.
 - Real customer-style fixtures have not yet been added.

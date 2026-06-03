@@ -4,12 +4,17 @@ import { useMemo, useState } from "react";
 
 type ProcessResult = {
   jobId: string;
-  downloadUrl: string;
-  preservationScore: number;
-  packageValid: boolean;
-  findingsCount: number;
-  duplicatedSlides: number;
-  report: {
+  status: "queued" | "processing" | "completed" | "failed";
+  statusUrl?: string;
+  downloadUrl: string | null;
+  reportUrl?: string | null;
+  manifestUrl?: string | null;
+  preservationScore: number | null;
+  packageValid: boolean | null;
+  findingsCount: number | null;
+  duplicatedSlides: number | null;
+  error?: string | null;
+  report?: {
     package_validation?: {
       issues?: Array<{ code: string; message: string; part?: string | null }>;
     };
@@ -50,8 +55,42 @@ export default function HomePage() {
       setError(payload.error ?? "Processing failed.");
       return;
     }
-    setResult(payload);
+    if (payload.statusUrl && payload.status !== "completed") {
+      setResult({
+        jobId: payload.jobId,
+        status: payload.status,
+        statusUrl: payload.statusUrl,
+        downloadUrl: null,
+        preservationScore: null,
+        packageValid: null,
+        findingsCount: null,
+        duplicatedSlides: null,
+      });
+      pollJob(payload.statusUrl);
+      return;
+    }
+    setResult({ ...payload, status: "completed" });
     setStatus("done");
+  }
+
+  async function pollJob(statusUrl: string) {
+    for (let attempt = 0; attempt < 120; attempt += 1) {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const response = await fetch(statusUrl);
+      const payload = await response.json();
+      setResult(payload);
+      if (payload.status === "completed") {
+        setStatus("done");
+        return;
+      }
+      if (payload.status === "failed") {
+        setStatus("error");
+        setError(payload.error ?? "Processing failed.");
+        return;
+      }
+    }
+    setStatus("error");
+    setError("Processing is still running. Refresh the job status and try again.");
   }
 
   return (
@@ -94,31 +133,38 @@ export default function HomePage() {
           {error ? <p className="errorText">{error}</p> : null}
           {result ? (
             <div className="summaryGrid">
-              <Metric label="Preservation score" value={result.preservationScore.toFixed(3)} tone={result.preservationScore === 1 ? "good" : "warn"} />
-              <Metric label="Package valid" value={result.packageValid ? "Yes" : "No"} tone={result.packageValid ? "good" : "bad"} />
-              <Metric label="Findings" value={String(result.findingsCount)} />
-              <Metric label="Duplicated slides" value={String(result.duplicatedSlides)} />
-              <a className="downloadButton" href={result.downloadUrl}>
-                Download editable PPTX
-              </a>
+              <Metric label="Job status" value={result.status} tone={result.status === "completed" ? "good" : result.status === "failed" ? "bad" : "warn"} />
+              <Metric
+                label="Preservation score"
+                value={result.preservationScore == null ? "-" : result.preservationScore.toFixed(3)}
+                tone={result.preservationScore === 1 ? "good" : "warn"}
+              />
+              <Metric label="Package valid" value={result.packageValid == null ? "-" : result.packageValid ? "Yes" : "No"} tone={result.packageValid ? "good" : "bad"} />
+              <Metric label="Findings" value={result.findingsCount == null ? "-" : String(result.findingsCount)} />
+              <Metric label="Duplicated slides" value={result.duplicatedSlides == null ? "-" : String(result.duplicatedSlides)} />
+              {result.downloadUrl ? (
+                <a className="downloadButton" href={result.downloadUrl}>
+                  Download editable PPTX
+                </a>
+              ) : null}
             </div>
           ) : null}
         </section>
 
-        {result ? (
+        {result?.report ? (
           <section className="panel reportPanel">
             <h2>Preservation Report</h2>
             <div className="reportColumns">
               <div>
                 <h3>Updated table</h3>
-                <pre>{JSON.stringify(result.report.export_table, null, 2)}</pre>
+                <pre>{JSON.stringify(result.report?.export_table, null, 2)}</pre>
               </div>
               <div>
                 <h3>Updated chart</h3>
-                <pre>{JSON.stringify(result.report.export_chart, null, 2)}</pre>
+                <pre>{JSON.stringify(result.report?.export_chart, null, 2)}</pre>
               </div>
             </div>
-            {result.report.package_validation?.issues?.length ? (
+            {result.report?.package_validation?.issues?.length ? (
               <div className="issues">
                 <h3>Validation issues</h3>
                 <pre>{JSON.stringify(result.report.package_validation.issues, null, 2)}</pre>
@@ -141,4 +187,3 @@ function Metric({ label, value, tone }: { label: string; value: string; tone?: "
     </div>
   );
 }
-

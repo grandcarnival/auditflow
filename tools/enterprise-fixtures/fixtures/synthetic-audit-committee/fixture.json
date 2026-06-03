@@ -2,10 +2,21 @@
   "id": "synthetic-audit-committee",
   "name": "Synthetic audit committee recurring deck",
   "deck_type": "audit_committee",
+  "fixture_profile": {
+    "industry": "synthetic",
+    "source": "generated",
+    "anonymized": true,
+    "contains_customer_data": false,
+    "deck_family": "recurring_audit_committee"
+  },
   "prior_deck": "prior.pptx",
   "findings_workbook": "findings.xlsx",
   "fiscal_year": 2026,
-  "minimum_preservation_score": 1.0,
-  "expected_package_valid": true
+  "success_metrics": {
+    "minimum_preservation_score": 1.0,
+    "expected_package_valid": true,
+    "max_blocking_output_failures": 0,
+    "requires_manifest": true,
+    "requires_editable_output": true
+  }
 }
-

@@ -63,6 +63,26 @@ def analyze_failure_modes(path: str | Path) -> list[FailureDiagnostic]:
     return diagnostics
 
 
+def summarize_failure_diagnostics(diagnostics: list[FailureDiagnostic]) -> dict[str, Any]:
+    by_type: dict[str, int] = {}
+    by_severity: dict[str, int] = {}
+    actions: list[str] = []
+    for diagnostic in diagnostics:
+        by_type[diagnostic.failure_type] = by_type.get(diagnostic.failure_type, 0) + 1
+        by_severity[diagnostic.severity] = by_severity.get(diagnostic.severity, 0) + 1
+        if diagnostic.action not in actions:
+            actions.append(diagnostic.action)
+
+    blocking = any(diagnostic.severity in {"critical", "high"} for diagnostic in diagnostics)
+    return {
+        "total": len(diagnostics),
+        "by_type": by_type,
+        "by_severity": by_severity,
+        "blocking": blocking,
+        "recommended_actions": actions,
+    }
+
+
 def _from_validation_issue(issue: dict[str, Any]) -> FailureDiagnostic:
     code = issue["code"]
     if code == "missing_relationship_part":
@@ -169,4 +189,3 @@ def _detect_malformed_xml(parts: dict[str, bytes]) -> list[FailureDiagnostic]:
                 )
             )
     return diagnostics
-

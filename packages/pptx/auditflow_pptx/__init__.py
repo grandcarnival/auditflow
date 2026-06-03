@@ -10,7 +10,7 @@ from .tables import TableUpdateResult, extract_table_matrix, update_table_in_clo
 from .charts import ChartSeries, ChartUpdateResult, extract_chart_data, update_chart_in_clone
 from .slides import SlideDuplicationResult, duplicate_slide_in_clone
 from .validation import PptxValidationReport, ValidationIssue, validate_pptx_package
-from .failures import FailureDiagnostic, analyze_failure_modes
+from .failures import FailureDiagnostic, analyze_failure_modes, summarize_failure_diagnostics
 
 __all__ = [
     "ChartSeries",
@@ -36,4 +36,5 @@ __all__ = [
     "update_table_in_clone",
     "validate_pptx_package",
     "validate_preservation",
+    "summarize_failure_diagnostics",
 ]

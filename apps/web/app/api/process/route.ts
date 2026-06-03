@@ -78,9 +78,7 @@ function runWorkflow(paths: {
   reportPath: string;
   manifestPath: string;
 }) {
-  const python =
-    process.env.AUDITFLOW_PYTHON ??
-    "C:\\Users\\alexh\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe";
+  const python = process.env.AUDITFLOW_PYTHON ?? (process.platform === "win32" ? "python.exe" : "python");
   const script = path.join(paths.repoRoot, "tools", "workflow", "run_mvp_workflow.py");
   const args = [
     script,

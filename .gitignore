@@ -10,6 +10,7 @@ tools/pptx-spike/vendor/
 .pytest_cache/
 __pycache__/
 *.pyc
+*.tsbuildinfo
 dist/
 coverage/
 

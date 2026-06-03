@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -9,13 +10,15 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "tools" / "regression" / "out"
+TMP = ROOT / ".runtime" / "tmp"
 PYTHON = Path(sys.executable)
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    TMP.mkdir(parents=True, exist_ok=True)
     steps = [
-        run_step("unit_tests", [str(PYTHON), "-m", "pytest", "packages/pptx/tests", "packages/documents/tests", "packages/ai/tests", "packages/workflow/tests"]),
+        run_step("unit_tests", [str(PYTHON), "-m", "pytest", "-p", "no:cacheprovider", "packages/pptx/tests", "packages/documents/tests", "packages/ai/tests", "packages/workflow/tests"]),
         run_step("preservation_benchmark", [str(PYTHON), "tools/preservation-benchmark/run_benchmark_suite.py"]),
         run_step("enterprise_fixtures", [str(PYTHON), "tools/enterprise-fixtures/run_fixture_suite.py"]),
     ]
@@ -33,7 +36,10 @@ def main() -> None:
 
 
 def run_step(name: str, command: list[str]) -> dict[str, Any]:
-    completed = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+    env = os.environ.copy()
+    env["TMP"] = str(TMP)
+    env["TEMP"] = str(TMP)
+    completed = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, env=env)
     return {
         "name": name,
         "command": command,
@@ -62,4 +68,3 @@ def render_markdown(result: dict[str, Any]) -> str:
 
 if __name__ == "__main__":
     main()
-

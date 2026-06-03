@@ -354,8 +354,8 @@
     },
     "target": {
       "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\export.pptx",
-      "sha256": "e5f6f9e5c988e2d9cd6cea01ccdb78e49963ec0f357cc55b932f5e2ee7e502ff",
-      "size_bytes": 41514,
+      "sha256": "1afcf93b044615856bd644b717f58fca5e5f2cae421337358e13f519e957362c",
+      "size_bytes": 41675,
       "slide_count": 4,
       "slide_master_count": 1,
       "slide_layout_count": 11,
@@ -379,7 +379,7 @@
   },
   "manifest": {
     "manifest_version": "2026-06-03.1",
-    "generated_at": "2026-06-03T15:46:02.069629+00:00",
+    "generated_at": "2026-06-03T17:25:04.506652+00:00",
     "source_deck": {
       "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\fixtures\\synthetic-audit-committee\\prior.pptx",
       "filename": "prior.pptx",
@@ -427,14 +427,14 @@
     "output_deck": {
       "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\export.pptx",
       "filename": "export.pptx",
-      "sha256": "e5f6f9e5c988e2d9cd6cea01ccdb78e49963ec0f357cc55b932f5e2ee7e502ff",
-      "size_bytes": 41514,
+      "sha256": "1afcf93b044615856bd644b717f58fca5e5f2cae421337358e13f519e957362c",
+      "size_bytes": 41675,
       "kind": "pptx",
       "details": {
         "pptx_metrics": {
           "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\export.pptx",
-          "sha256": "e5f6f9e5c988e2d9cd6cea01ccdb78e49963ec0f357cc55b932f5e2ee7e502ff",
-          "size_bytes": 41514,
+          "sha256": "1afcf93b044615856bd644b717f58fca5e5f2cae421337358e13f519e957362c",
+          "size_bytes": 41675,
           "slide_count": 4,
           "slide_master_count": 1,
           "slide_layout_count": 11,
@@ -788,8 +788,8 @@
         },
         "target": {
           "path": "C:\\Users\\alexh\\Documents\\Codex\\2026-05-28\\you-are-my-autonomous-cto-and\\tools\\enterprise-fixtures\\out\\synthetic-audit-committee\\export.pptx",
-          "sha256": "e5f6f9e5c988e2d9cd6cea01ccdb78e49963ec0f357cc55b932f5e2ee7e502ff",
-          "size_bytes": 41514,
+          "sha256": "1afcf93b044615856bd644b717f58fca5e5f2cae421337358e13f519e957362c",
+          "size_bytes": 41675,
           "slide_count": 4,
           "slide_master_count": 1,
           "slide_layout_count": 11,
